@@ -1,0 +1,104 @@
+/****** General Design *********/
+body, html{
+  background-image:url('../img/background.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  font-family: 'Lora', serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/********* Header ************************/
+.header{
+  text-align:center;
+  margin:auto; 
+  color:white;
+}
+/*************** Search Bar & Button **********************/
+.search{
+  margin:auto;
+  text-align:center;
+}
+.searchTerm{
+  width:75%;
+  height:35px;
+  border-radius:8px;
+  margin-bottom: 5%;
+}
+input:focus{
+  outline: none;
+}
+.searchButton {
+  height:40px;
+  margin: auto;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 10px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+  background-color: #699DB6;
+	border-color: rgba(0,0,0,0.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	color: #FFF;
+}
+
+.searchButton:hover {
+		background-color: #4F87A2;
+		border-color: rgba(0,0,0,0.5);
+	}
+	
+.searchButton:active {
+		background-color: #3C677B;
+		border-color: rgba(0,0,0,0.9);
+	}
+.results{
+  clear:both;
+  margin-top:5%;
+  text-align:center;
+}
+a{
+  width:70%;
+}
+a:link{
+  color:black;
+  text-decoration:none;
+  width:70%;
+}
+a:visited{
+  color:black;
+  text-decoration:none;
+  width:70%;
+}
+/*********** Wiki Results ****************/
+.wiki-page{
+  width:70%;
+  height:10%;
+  padding:1.5% 1.5%;
+  margin:2% auto;
+  background-color:rgba(255, 153, 102, .35);
+  border-radius:10px;
+}
+.wiki-page h1{
+  text-align:left;
+}
+.wiki-page p{
+  text-align:left;
+  margin:0;
+}
+/******* Responsive Design ********/
+@media only screen and (min-width: 680px){
+  .searchTerm{
+    width:35%;
+  }
+  .searchButton {
+    display: inline-block;
+    font-size: 13px;
+    padding: 10px 30px;
+  }
+}
