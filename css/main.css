@@ -1,13 +1,17 @@
 /****** General Design *********/
-body, html{
-  background-image:url('../img/background.jpg');
-  background-size:cover;
-  background-repeat:no-repeat;
-  font-family: 'Lora', serif;
-  height: 100%;
-  width: 100%;
+body,html{
   margin: 0;
   padding: 0;
+}
+html{
+  background:url('../img/background.jpg');
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body{
+  min-height: 100%;
+  font-family: 'Lora', serif;
 }
 /********* Header ************************/
 .header{
@@ -15,48 +19,51 @@ body, html{
   margin:auto; 
   color:white;
 }
+.header h1{
+  margin-top: 0;
+}
 /*************** Search Bar & Button **********************/
 .search{
-  margin:auto;
+  margin:0 auto;
   text-align:center;
 }
 .searchTerm{
   width:75%;
   height:35px;
   border-radius:8px;
-  margin-bottom: 5%;
+  margin-bottom: 0%;
 }
 input:focus{
   outline: none;
 }
 .searchButton {
   height:40px;
-  margin: auto;
-	display: block;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 10px;
-	padding: 10px 30px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border: 1px solid rgba(0,0,0,0.3);
-	border-bottom-width: 3px;
+  margin: 3% auto;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-bottom-width: 3px;
   background-color: #699DB6;
-	border-color: rgba(0,0,0,0.3);
-	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
-	color: #FFF;
+  border-color: rgba(0,0,0,0.3);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  color: #FFF;
 }
 
 .searchButton:hover {
-		background-color: #4F87A2;
-		border-color: rgba(0,0,0,0.5);
-	}
-	
+    background-color: #4F87A2;
+    border-color: rgba(0,0,0,0.5);
+  }
+  
 .searchButton:active {
-		background-color: #3C677B;
-		border-color: rgba(0,0,0,0.9);
-	}
+    background-color: #3C677B;
+    border-color: rgba(0,0,0,0.9);
+  }
 .results{
   clear:both;
   margin-top:5%;
@@ -77,22 +84,45 @@ a:visited{
 }
 /*********** Wiki Results ****************/
 .wiki-page{
-  width:70%;
-  height:10%;
+  width:85%;
   padding:1.5% 1.5%;
-  margin:2% auto;
-  background-color:rgba(255, 153, 102, .35);
+  margin:auto;
+  margin-bottom: 2%;
+  background-color:rgba(255, 153, 102, .60);
   border-radius:10px;
 }
 .wiki-page h1{
   text-align:left;
+  font-size: 1.2em;
 }
 .wiki-page p{
   text-align:left;
   margin:0;
 }
+/********* Footer Section************/
+footer {
+  clear: both;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  color: white;
+}
+footer a:link{
+  text-decoration: none;
+  color: blue;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+footer a:visited{
+  color: blue;
+  text-decoration: none;
+  font-weight: bolder;
+}
 /******* Responsive Design ********/
 @media only screen and (min-width: 680px){
+  .search{
+
+  }
   .searchTerm{
     width:35%;
   }
@@ -100,5 +130,10 @@ a:visited{
     display: inline-block;
     font-size: 13px;
     padding: 10px 30px;
+  }
+  .wiki-page{
+    width:80%;
+    padding: 3.5% auto;
+
   }
 }
