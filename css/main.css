@@ -23,22 +23,27 @@ body{
   margin-top: 0;
 }
 /*************** Search Bar & Button **********************/
-.search{
-  margin:0 auto;
-  text-align:center;
+.search,
+.random {
+  margin: 0 auto;
+  text-align: center;
 }
-.searchTerm{
-  width:75%;
-  height:35px;
-  border-radius:8px;
+
+.searchTerm {
+  width: 75%;
+  height: 35px;
+  border-radius: 8px;
   margin-bottom: 0%;
 }
-input:focus{
+
+input:focus {
   outline: none;
 }
-.searchButton {
-  height:40px;
-  margin: 3% auto;
+
+.searchButton,
+.random-button {
+  height: 40px;
+  margin: 1% auto;
   display: block;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -47,59 +52,73 @@ input:focus{
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border: 1px solid rgba(0,0,0,0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom-width: 3px;
   background-color: #699DB6;
-  border-color: rgba(0,0,0,0.3);
-  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  border-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   color: #FFF;
 }
 
-.searchButton:hover {
-    background-color: #4F87A2;
-    border-color: rgba(0,0,0,0.5);
-  }
-  
-.searchButton:active {
-    background-color: #3C677B;
-    border-color: rgba(0,0,0,0.9);
-  }
-.results{
-  clear:both;
-  margin-top:5%;
-  text-align:center;
+.searchButton:hover,
+.random-button:hover {
+  background-color: #4F87A2;
+  border-color: rgba(0, 0, 0, 0.5);
 }
-a{
-  width:70%;
+
+.searchButton:active,
+.random-button:active {
+  background-color: #3C677B;
+  border-color: rgba(0, 0, 0, 0.9);
 }
-a:link{
-  color:black;
-  text-decoration:none;
-  width:70%;
+
+.results {
+  clear: both;
+  margin-top: 5%;
+  text-align: center;
 }
-a:visited{
-  color:black;
-  text-decoration:none;
-  width:70%;
+
+a {
+  width: 70%;
 }
+
+a:link {
+  color: black;
+  text-decoration: none;
+  width: 70%;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+  width: 70%;
+}
+
 /*********** Wiki Results ****************/
-.wiki-page{
-  width:85%;
-  padding:1.5% 1.5%;
-  margin:auto;
+
+.wiki-page {
+  width: 85%;
+  padding: 1.5% 1.5%;
+  margin: auto;
   margin-bottom: 2%;
-  background-color:rgba(255, 153, 102, .60);
-  border-radius:10px;
+  background-color: rgba(255, 153, 102, .60);
+  border-radius: 10px;
+  overflow: hidden;
 }
-.wiki-page h1{
-  text-align:left;
+
+.wiki-page h1 {
+  text-align: left;
   font-size: 1.2em;
 }
-.wiki-page p{
-  text-align:left;
-  margin:0;
+
+.wiki-page p {
+  text-align: left;
+  margin: 0;
 }
+
+
 /********* Footer Section************/
+
 footer {
   clear: both;
   margin: auto;
@@ -107,33 +126,34 @@ footer {
   text-align: center;
   color: white;
 }
-footer a:link{
+
+footer a:link {
   text-decoration: none;
   color: blue;
   font-size: 1.5em;
   font-weight: bolder;
 }
-footer a:visited{
+
+footer a:visited {
   color: blue;
   text-decoration: none;
   font-weight: bolder;
 }
-/******* Responsive Design ********/
-@media only screen and (min-width: 680px){
-  .search{
 
-  }
-  .searchTerm{
-    width:35%;
+
+/******* Responsive Design ********/
+
+@media only screen and (min-width: 680px) {
+  .searchTerm {
+    width: 35%;
   }
   .searchButton {
     display: inline-block;
     font-size: 13px;
     padding: 10px 30px;
   }
-  .wiki-page{
-    width:80%;
+  .wiki-page {
+    width: 80%;
     padding: 3.5% auto;
-
   }
 }
