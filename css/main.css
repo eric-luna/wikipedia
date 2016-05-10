@@ -4,7 +4,7 @@ body,html{
   padding: 0;
 }
 html{
-  background:url('../img/background.jpg');
+  background:url('../img/wikipedia.png');
   min-height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,12 +72,14 @@ input:focus {
   border-color: rgba(0, 0, 0, 0.9);
 }
 
+/*********** Wiki Results ****************/
+/*results div section */
 .results {
   clear: both;
   margin-top: 5%;
   text-align: center;
 }
-
+/*result links for wiki articles*/
 a {
   width: 70%;
 }
@@ -93,24 +95,23 @@ a:visited {
   text-decoration: none;
   width: 70%;
 }
-
-/*********** Wiki Results ****************/
-
+/*main body of wiki result */
 .wiki-page {
   width: 85%;
   padding: 1.5% 1.5%;
   margin: auto;
   margin-bottom: 2%;
-  background-color: rgba(255, 153, 102, .60);
+  background-color: rgba(255, 153, 102, .75);
+  background-color: rgba(0, 204, 102,0.70);
   border-radius: 10px;
   overflow: hidden;
 }
-
+/*wiki result title*/
 .wiki-page h1 {
   text-align: left;
   font-size: 1.2em;
 }
-
+/*wiki result summary*/
 .wiki-page p {
   text-align: left;
   margin: 0;
